@@ -1,0 +1,44 @@
+ /* save image button class */
+ 
+ .fa{
+   color: #e9ecef;
+  
+}
+.btn{
+    background-color: turquoise;
+}
+body{
+    width: 94%;
+}
+.row{
+white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  
+}
+.hour {
+    background-color: #ffffff;
+    color: #000000;
+    border-top: 1px dashed #000000;
+}
+.before{
+    background-color: #adb5bd;
+
+}
+.now{
+   background-color:  #dc3545;
+}
+.after
+{
+    background-color:#3bad55;
+  
+} 
+
+  textarea {
+    
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
