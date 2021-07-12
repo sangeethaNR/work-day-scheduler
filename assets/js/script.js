@@ -1,6 +1,6 @@
 
 var currentDate = moment().format('dddd, MMM Do YYYY');
-$("#time-display").html(currentDate);
+$("#currentDay").html(currentDate);
 
 var timeNow = moment().hour();
 $(document).ready(function () {
@@ -22,21 +22,21 @@ function    momentColor() {
        // get the textarea children and apply the class
         if (blockTime < timeNow) {
             
-                        $(this).children('textarea').addClass("before");
-                        $(this).children('textarea').removeClass("after");
-                        $(this).children('textarea').removeClass("now");
+                        $(this).children('textarea').addClass("past");
+                        $(this).children('textarea').removeClass("present");
+                        $(this).children('textarea').removeClass("future");
         }
         else if (blockTime === timeNow) {
           
-            $(this).children('textarea').addClass("now");
-            $(this).children('textarea').removeClass("before");
-            $(this).children('textarea').removeClass("after");
+            $(this).children('textarea').addClass("present");
+            $(this).children('textarea').removeClass("past");
+            $(this).children('textarea').removeClass("future");
         }
         else {
             
-            $(this).children('textarea').addClass("after");
-            $(this).children('textarea').removeClass("before");
-            $(this).children('textarea').removeClass("now");
+            $(this).children('textarea').addClass("future");
+            $(this).children('textarea').removeClass("past");
+            $(this).children('textarea').removeClass("present");
             
 
         }
